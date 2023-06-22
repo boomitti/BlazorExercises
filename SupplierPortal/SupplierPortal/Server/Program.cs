@@ -1,5 +1,8 @@
 ﻿using Microsoft.AspNetCore.Hosting.StaticWebAssets;
 using Microsoft.AspNetCore.ResponseCompression;
+using Microsoft.EntityFrameworkCore;
+using SupplierPortal.Server.Data.Context;
+using SupplierPortal.Server.Data.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +12,10 @@ StaticWebAssetsLoader.UseStaticWebAssets(builder.Environment, builder.Configurat
 
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
+
+//Database Dependency
+builder.Services.AddDbContext<SupplierDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("SupplierConnection")));
+builder.Services.AddScoped<ISupplierRepository, SupplierRepository>();
 
 var app = builder.Build();
 
