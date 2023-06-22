@@ -20,8 +20,16 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/BMR_6500/Documents/GitHub/BlazorExercises/SupplierPortal/SupplierPortal/Client/Pages/AddSupplier.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkU3VwcGxpZXIucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/BMR_6500/Documents/GitHub/BlazorExercises/SupplierPortal/SupplierPortal/Client/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BMR_6500/Documents/GitHub/BlazorExercises/SupplierPortal/SupplierPortal/Client/Pages/DeleteSupplier.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVsZXRlU3VwcGxpZXIucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/BMR_6500/Documents/GitHub/BlazorExercises/SupplierPortal/SupplierPortal/Client/Pages/FetchData.razor]
@@ -30,6 +38,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/BMR_6500/Documents/GitHub/BlazorExercises/SupplierPortal/SupplierPortal/Client/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/BMR_6500/Documents/GitHub/BlazorExercises/SupplierPortal/SupplierPortal/Client/Pages/SupplierDetails.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3VwcGxpZXJEZXRhaWxzLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/BMR_6500/Documents/GitHub/BlazorExercises/SupplierPortal/SupplierPortal/Client/Shared/MainLayout.razor]
