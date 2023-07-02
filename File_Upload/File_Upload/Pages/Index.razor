@@ -1,0 +1,64 @@
+﻿@page "/"
+@using File_Upload.Services;
+@inject IFileUpload fileUpload;
+
+<div class="container">
+	<div class="row mb-5">
+		<div class="col-6">
+			<div class="form-group">
+				<InputFile OnChange="OnInputFileChange" multiple />
+				<button class="btn btn-sm btn-success" type="button" @onclick="UploadFiles">Upload</button>
+				@{
+					var progressCSS = "progress" + (displayProgress ? "" : "d-none");
+					var progressWidthStyle = progressPercent + "%";
+				}
+				<div class="@progressCSS">
+					<div class="progress-bar" role="progressbar" style="width:@progressWidthStyle" 
+					area-valuenow="@progressPercent" area-minvalue="0" area-maxvalue="100"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<label>@labelText</label>
+</div>
+
+@code {
+	private bool displayProgress;
+	private int progressPercent;
+
+	IReadOnlyList<IBrowserFile> selectedFiles;
+	private IList<string> previewImages = new List<string>(); 
+
+	public string labelText = "";
+
+	private void OnInputFileChange(InputFileChangeEventArgs e)
+	{
+		selectedFiles = new List<IBrowserFile>();
+		selectedFiles = e.GetMultipleFiles();
+	}
+
+	private async Task UploadFiles()
+	{
+		try
+		{
+			if(selectedFiles is not null && selectedFiles.Count > 0)
+			{
+				var uploaded = 0;
+				displayProgress = true;
+
+				foreach(var file in selectedFiles)
+				{
+					await fileUpload.UploadFile(file);
+					uploaded++;
+					progressPercent = (int)((uploaded / selectedFiles.Count) * 100);
+				}
+				//displayProgress = false;
+
+				labelText = $"Upload of {selectedFiles.Count} files successful";
+			}
+		} catch(Exception ex)
+		{
+			labelText = $"Upload failed due to {ex.Message}";
+		}
+	}
+}
