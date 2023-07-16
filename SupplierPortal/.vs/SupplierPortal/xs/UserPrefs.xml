@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{18557E12-414F-40E1-AFB6-AD8C0C7FC77B}|SupplierPortal">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SupplierPortal/Client/Pages/SupplierDetails.razor">
+    <Files>
+      <File FileName="SupplierPortal/Client/Pages/SupplierDetails.razor" Line="42" Column="47" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SupplierPortal">
+            <Node name="SupplierPortal.Client" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="SupplierDetails.razor" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.SupplierPortal.Client PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+</Properties>

@@ -1,0 +1,93 @@
+﻿@page "/fetchdata"
+@using BoomsPG.Data
+@using Append.Blazor.Printing
+
+@inject WeatherForecastService ForecastService
+@inject IPrintingService PrintingService
+
+<form id="printable-form">
+            <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label text-primary" for="exampleCheck1">Check me out</label>
+            </div>
+        </form>
+
+        <button @onclick="@(_ => PrintingService.Print("printable-form", PrintType.Html))">
+            Print Form
+        </button>
+
+
+<PageTitle>Weather forecast</PageTitle>
+
+<h1>Weather forecast</h1>
+
+<p>This component demonstrates fetching data from a service.</p>
+
+@if (forecasts == null)
+{
+    <p>
+        <em>Loading...</em>
+    </p>
+}
+else
+{
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Date</th>
+            <th>Temp. (C)</th>
+            <th>Temp. (F)</th>
+            <th>Summary</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var forecast in forecasts)
+        {
+            <tr>
+                <td>@forecast.Date.ToShortDateString()</td>
+                <td>@forecast.TemperatureC</td>
+                <td>@forecast.TemperatureF</td>
+                <td>@forecast.Summary</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+
+@using Microsoft.AspNetCore.Components
+@using MudBlazor.Extensions
+
+<MudGrid>
+    <MudItem xs="12" Class="d-flex gap-4 align-center justify-center">
+        <MudComboBox @bind-Value="@_value" @bind-Text="@_text" @bind-SelectedValues="@_selectedValues" Variant="Variant.Filled"
+                     Label="Standard (Contains)" Editable="true"  autocomplete="new-password">
+            <MudComboBoxItem Value="@("Foo")" Text="Foo">Foo</MudComboBoxItem>
+            <MudComboBoxItem Value="@("Bar")" Text="Bar">Bar</MudComboBoxItem>
+            <MudComboBoxItem Value="@("Fizz")" Text="Fizz">Fizz</MudComboBoxItem>
+            <MudComboBoxItem Value="@("Buzz")" Text="Buzz">Buzz</MudComboBoxItem>
+        </MudComboBox>
+    </MudItem>
+</MudGrid>
+
+@code {
+    private WeatherForecast[]? forecasts;
+
+    protected override async Task OnInitializedAsync()
+    {
+        forecasts = await ForecastService.GetForecastAsync(DateOnly.FromDateTime(DateTime.Now));
+    }
+    
+    
+    string _value;
+    string _text;
+    IEnumerable<string> _selectedValues;
+}

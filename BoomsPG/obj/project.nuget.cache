@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "dgSpecHash": "VVkb63bj+npeaF5jx05t8Ifkzv5yJ0Ul5Xwday4kpx7qFkp7dZoPBGlvJri+w4TuhVPraYdeNBZgk1HVaaReGA==",
+  "success": true,
+  "projectFilePath": "/Users/boomitti/RiderProjects/BoomsPG/BoomsPG/BoomsPG.csproj",
+  "expectedPackageFiles": [
+    "/Users/boomitti/.nuget/packages/append.blazor.printing/6.2.0/append.blazor.printing.6.2.0.nupkg.sha512",
+    "/Users/boomitti/.nuget/packages/buildbundlerminifier/3.2.449/buildbundlerminifier.3.2.449.nupkg.sha512",
+    "/Users/boomitti/.nuget/packages/codebeam.mudblazor.extensions/6.5.4/codebeam.mudblazor.extensions.6.5.4.nupkg.sha512",
+    "/Users/boomitti/.nuget/packages/csvhelper/30.0.1/csvhelper.30.0.1.nupkg.sha512",
+    "/Users/boomitti/.nuget/packages/microsoft.aspnetcore.authorization/7.0.5/microsoft.aspnetcore.authorization.7.0.5.nupkg.sha512",
+    "/Users/boomitti/.nuget/packages/microsoft.aspnetcore.components/7.0.5/microsoft.aspnetcore.components.7.0.5.nupkg.sha512",
+    "/Users/boomitti/.nuget/packages/microsoft.aspnetcore.components.analyzers/7.0.5/microsoft.aspnetcore.components.analyzers.7.0.5.nupkg.sha512",
+    "/Users/boomitti/.nuget/packages/microsoft.aspnetcore.components.forms/7.0.5/microsoft.aspnetcore.components.forms.7.0.5.nupkg.sha512",
+    "/Users/boomitti/.nuget/packages/microsoft.aspnetcore.components.web/7.0.5/microsoft.aspnetcore.components.web.7.0.5.nupkg.sha512",
+    "/Users/boomitti/.nuget/packages/microsoft.aspnetcore.metadata/7.0.5/microsoft.aspnetcore.metadata.7.0.5.nupkg.sha512",
+    "/Users/boomitti/.nuget/packages/microsoft.extensions.dependencyinjection/7.0.0/microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "/Users/boomitti/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "/Users/boomitti/.nuget/packages/microsoft.extensions.localization/7.0.5/microsoft.extensions.localization.7.0.5.nupkg.sha512",
+    "/Users/boomitti/.nuget/packages/microsoft.extensions.localization.abstractions/7.0.5/microsoft.extensions.localization.abstractions.7.0.5.nupkg.sha512",
+    "/Users/boomitti/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.0/microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "/Users/boomitti/.nuget/packages/microsoft.extensions.options/7.0.1/microsoft.extensions.options.7.0.1.nupkg.sha512",
+    "/Users/boomitti/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "/Users/boomitti/.nuget/packages/microsoft.jsinterop/7.0.5/microsoft.jsinterop.7.0.5.nupkg.sha512",
+    "/Users/boomitti/.nuget/packages/mudblazor/6.7.0/mudblazor.6.7.0.nupkg.sha512",
+    "/Users/boomitti/.nuget/packages/system.io.pipelines/7.0.0/system.io.pipelines.7.0.0.nupkg.sha512",
+    "/Users/boomitti/.nuget/packages/zxing.net/0.16.9/zxing.net.0.16.9.nupkg.sha512"
+  ],
+  "logs": []
+}
